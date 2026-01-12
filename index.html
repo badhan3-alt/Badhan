@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badhan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Typed.js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active" style="--i:1">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Services</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#portfolio" style="--i:4">Projects</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Badhan Das</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+
+            <p>
+                I’m Badhan Das, a passionate Full Stack Developer from Bangladesh with hands-on
+                experience building modern web applications using Django, JavaScript, React, and Python.
+            </p>
+
+            <div class="home-sci">
+                <a href="https://www.facebook.com/share/1QKr2gtGnb/" style="--i:7"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/badhan_0.8/" style="--i:8"><i class="bx bxl-instagram"></i></a>
+                <a href="https://wa.me/8801648735492" style="--i:9">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/badhan-das-8a5a92363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    style="--i:10"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/badhan3-alt" style="--i:11"><i class="bx bxl-github"></i></a>
+            </div>
+
+            <a href="#about" class="read">More About Me</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+        <h1 class="sub-title">About <span>Me</span></h1>
+        <div class="about-img" style="--i:1">
+
+            <img src="about.jpg" alt="About Me">
+        </div>
+
+        <div class="about-text">
+            <h4>Full Stack Developer!</h4>
+            <p>I am currently improving my JavaScript and React skills while building full-stack projects and
+                sharpening my backend expertise in Django. I love solving real-world problems through code, creating
+                clean UI/UX, and exploring new
+                technologies every day.</p>
+
+            <a href="#" class="read" id="about-read-more">Read More</a>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / PROJECTS -->
+    <section class="portfolio" id="portfolio">
+        <h1 class="sub-title">My <span>Projects</span></h1>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box" style="--i:1">
+                <img src="calculator.png" alt="Calculator">
+                <div class="portfolio-layer">
+                    <h4>Calculator</h4>
+                    <p>A standard calculator application built for efficiency.</p>
+                    <a href="https://github.com/badhan3-alt/Calculator" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" style="--i:2">
+                <img src="bdshop.png" alt="BDShop">
+                <div class="portfolio-layer">
+                    <h4>BDShop</h4>
+                    <p>An e-commerce platform project for online shopping.</p>
+                    <a href="https://github.com/badhan3-alt/BDShop" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+
+            <div class="services-list">
+                <div style="--i:1">
+                    <i class="bx bx-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Modern and responsive website development.</p>
+                    <a href="#" class="read" id="web-dev-learn-more">Learn More</a>
+                </div>
+
+                <div style="--i:2">
+                    <i class="bx bx-crop"></i>
+                    <h2>Frontend Design</h2>
+                    <p>Clean, modern and user-friendly designs.</p>
+                    <a href="#" class="read" id="frontend-design-learn-more">Learn More</a>
+                </div>
+
+                <div style="--i:3">
+                    <i class="bx bxs-data"></i>
+                    <h2>Database</h2>
+                    <p>Relational data modeling and management.</p>
+                    <a href="#" class="read" id="database-learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <h1 class="sub-title">My <span>Skills</span></h1>
+
+        <div class="skills-main">
+            <div class="skills-left" style="--i:1">
+                <h3 class="heading">Technical Skills</h3>
+                <div class="technical-bars">
+                    <div class="bar" style="--i:1">
+                        <i style="color: #c95d2e" class='bx bxl-html5'></i>
+                        <div class="info">
+                            <span>HTML / CSS</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar" style="--i:2">
+                        <i style="color: #147bbc" class='bx bxl-python'></i>
+                        <div class="info">
+                            <span>Python / Django</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar" style="--i:3">
+                        <i style="color: #b0bc1e" class='bx bxl-c-plus-plus'></i>
+                        <div class="info">
+                            <span>C / C++</span>
+                        </div>
+                        <div class="progress-line c">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar" style="--i:4">
+                        <i style="color: #c32ec9" class='bx bxl-java'></i>
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="bar" style="--i:5">
+                        <i style="color: #69bcbc" class='bx bxs-data'></i>
+                        <div class="info">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="progress-line mysql">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-right" style="--i:2">
+                <h3 class="heading">Professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="90" data-percent="90" style="--i:1"></div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="65" data-percent="65" style="--i:2"></div>
+                        <div class="text">
+                            <big>65%</big>
+                            <small>Communication</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="75" data-percent="75" style="--i:3"></div>
+                        <div class="text">
+                            <big>75%</big>
+                            <small>Problem Solving</small>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="circle" data-dots="85" data-percent="85" style="--i:4"></div>
+                        <div class="text">
+                            <big>85%</big>
+                            <small>Teamwork</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work Together</h4>
+            <p>I am available for freelance work. Connect with me via phone: 01648735492 or email:
+                badhandas715@gmail.com</p>
+            <div class="contact-list">
+                <li style="--i:1"><i class='bx bxs-send'></i> badhandas715@gmail.com</li>
+                <li style="--i:2"><i class='bx bxs-phone'></i> 01648735492</li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.facebook.com/share/1QKr2gtGnb/" style="--i:7"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/badhan_0.8/" style="--i:8"><i class="bx bxl-instagram"></i></a>
+                <a href="https://wa.me/8801648735492" style="--i:9">
+                    <i class="bx bxl-whatsapp"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/badhan-das-8a5a92363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    style="--i:10"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/badhan3-alt" style="--i:11"><i class="bx bxl-github"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="" id="contactForm">
+                <input type="text" name="from_name" placeholder="Enter Your Name" required style="--i:1">
+                <input type="email" name="from_email" placeholder="Enter Your Email" required style="--i:2">
+
+                <input type="text" name="subject" placeholder="Enter Your Woks Subject" required style="--i:3">
+                <textarea name="message" id="" cols="40" rows="10" placeholder="Enter Your Message" required
+                    style="--i:4"></textarea>
+                <input type="submit" value="submit" class="send" style="--i:5">
+            </form>
+        </div>
+    </section>
+
+    <!-- Web Development Modal -->
+    <div id="web-dev-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal web-dev-close">&times;</span>
+            <h2>Web Development Services</h2>
+            <div class="modal-body">
+                <p>I build modern, secure, and scalable web applications using Django, a powerful Python-based
+                    framework. My work focuses on creating reliable backend systems that support fast performance,
+                    strong security, and long-term maintainability.</p>
+                <p>I develop custom features such as user authentication, admin dashboards, database-driven
+                    applications, and RESTful APIs using Django REST Framework. Each project is structured with clean
+                    code and best practices to ensure scalability and ease of future updates.</p>
+                <p>From backend development to full-stack integration and deployment support, I help turn ideas into
+                    production-ready web applications built to grow with your business.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Frontend Design Modal -->
+    <div id="frontend-design-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal frontend-design-close">&times;</span>
+            <h2>Frontend Design Services</h2>
+            <div class="modal-body">
+                <p>I create clean, modern, and responsive frontend designs that focus on user experience and usability.
+                    My goal is to build interfaces that are visually appealing, easy to navigate, and optimized for all
+                    devices and screen sizes.</p>
+                <p>I work with modern frontend technologies to turn designs into fast, interactive, and accessible user
+                    interfaces. Every layout is crafted with attention to detail, performance, and consistency to ensure
+                    a smooth experience for users.</p>
+                <p>Whether it’s a landing page, business website, or web application interface, I design frontends that
+                    effectively communicate your brand and engage your audience.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Database Modal -->
+    <div id="database-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal database-close">&times;</span>
+            <h2>Database Services</h2>
+            <div class="modal-body">
+                <p>I design and manage efficient, well-structured MySQL databases that ensure data integrity,
+                    performance, and scalability. My focus is on creating optimized database schemas that support
+                    reliable data storage and fast query execution.</p>
+                <p>I work with relational data modeling, indexing, and query optimization to improve application
+                    performance. I also implement secure data handling practices, backups, and maintenance strategies to
+                    keep databases stable and production-ready.</p>
+                <p>Whether supporting a web application or building a database from scratch, I provide MySQL solutions
+                    that are reliable, secure, and designed to grow with your application.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Modal -->
+    <div id="about-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal about-close">&times;</span>
+            <h2>About Me</h2>
+            <div class="modal-body">
+                <p>I’m Badhan Das, a passionate Full Stack Developer from Bangladesh with hands-on experience building
+                    modern web applications using Django, JavaScript, React, and Python. I love solving real-world
+                    problems through code, creating clean UI/UX, and exploring new technologies every day.</p>
+                <p>Currently, I am improving my JavaScript and React skills while building full-stack projects and
+                    sharpening my backend expertise in Django.</p>
+                <p>I’m focused, motivated, and constantly learning to become a better developer.</p>
+                <p>Open to collaborations, internships, and full-time opportunities in Web Development, Full Stack
+                    Development, and Software Engineering.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
